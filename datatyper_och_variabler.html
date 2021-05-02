@@ -8,11 +8,55 @@
 </head>
 <body>
     <script>
+
         document.write("<h1>Övning 1</h1>")
-        let name="Kalle", age = 30
+        let name="Kalle",
+            age = 30
         document.write("En person vid namn " + name + " är " + age + " år.")
         document.write("<br>")
         document.write("Nästa år fyller hen " + (age+1) + " år.")
+        document.write("<br><br>")
+
+
+        document.write("<h1>Övning 2</h1>")
+
+        let tal1=15,
+            tal2=3
+            
+        document.write("Tal 1 = " + tal1)
+        document.write("<br>")
+        document.write("Tal 2 = " + tal2)
+        document.write("<br><br>")
+        document.write("Summan av " + tal1 + " och " + tal2 + " är " + (tal1+tal2))
+        document.write("<br>")
+        document.write("Differensen av " + tal1 + " och " + tal2 + " är " + (tal1-tal2))
+        document.write("<br>")
+        document.write("Produkten av " + tal1 + " och " + tal2 + " är " + (tal1*tal2))
+        document.write("<br>")
+        document.write("Kvoten av " + tal1 + " och " + tal2 + " är " + (tal1/tal2))
+        document.write("<br><br>")
+
+        document.write("<h1>Övning 3</h1>")
+
+        let namn = "Stina",
+            lon = 20000,
+            skattesats = 0.3,
+            skatt = (skattesats*lon),
+            netto = (lon-skatt)
+        
+        document.write("Namn: " + namn)
+        document.write("<br>")
+        document.write("Månadslön: " + lon)
+        document.write("<br>")
+        document.write("Skatt: " + skatt)
+        document.write("<br><br>")
+        document.write(namn + " tjänar " + lon + " kr i månadslön och betalar " + skatt + " kr i skatt. <br>")
+        document.write("Nettolönen är " + netto + " kr.")
+
+
+
+        
+        
     </script>
 </body>
 </html>
