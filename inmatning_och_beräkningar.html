@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        document.write("<h1> Övning 1 </h1>")
+        document.querySelector('#bgnBtn').addEventListener('click', promptMe);
+
+function promptMe() {
+    var radien = prompt("Please provide an Adjective");
+    alert (radien);
+
+
+        let radien = prompt("Vad är radien på cirkeln?")
+
+            radien = Number(radien)
+
+        let omkrets =  Math.PI * (radien*2),
+            area = Math.PI * radien * radien
+
+        document.write("En cirkel med radien " + radien + " har omkretsen " + omkrets.toFixed(2) + "cm och arean<br> " + area.toFixed(2) + "cm2") 
+
+        document.write("<br><br>")
+
+        document.write("<h1> Övning 2 </h1>")
+        
+
+    </script>
+
+</body>
+</html>
