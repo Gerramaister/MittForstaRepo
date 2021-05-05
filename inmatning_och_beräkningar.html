@@ -10,28 +10,66 @@
     
     <script>
 
-        document.write("<h1> Övning 1 </h1>")
-        document.querySelector('#bgnBtn').addEventListener('click', promptMe);
-
-function promptMe() {
-    var radien = prompt("Please provide an Adjective");
-    alert (radien);
-
-
-        let radien = prompt("Vad är radien på cirkeln?")
-
-            radien = Number(radien)
-
-        let omkrets =  Math.PI * (radien*2),
-            area = Math.PI * radien * radien
-
-        document.write("En cirkel med radien " + radien + " har omkretsen " + omkrets.toFixed(2) + "cm och arean<br> " + area.toFixed(2) + "cm2") 
-
-        document.write("<br><br>")
-
-        document.write("<h1> Övning 2 </h1>")
+        // document.write("<h1> Övning 1 </h1>")
         
 
+        // let radien = prompt("Vad är radien på cirkeln?")
+
+        //     radien = Number(radien)
+
+        // let omkrets =  Math.PI * (radien*2),
+        //     area = Math.PI * radien * radien
+
+        // document.write("En cirkel med radien " + radien + " har omkretsen " + omkrets.toFixed(2) + "cm och arean<br> " + area.toFixed(2) + "cm2") 
+
+        // document.write("<br><br>")
+
+        // document.write("<h1> Övning 2 </h1>")
+
+        // let name1 = prompt("Vad heter du?","Skriv ditt namn"),
+        //     euro = prompt("Hur många euro vill du växla?"),
+        //     exchangeRate = prompt("Vad ligger växlingskures på?","Skriv en punkt istället för ett komma")
+        //     exchangeRate = Number(exchangeRate)
+        //     euro = Number(euro)
+        // let kronor = exchangeRate * euro
+        //     kronor = Number(kronor)
+        
+        //     document.write(name1 + " du får " + kronor + "kr när du växlar in " + euro)
+
+            document.write("<h1> Övning 3 </h1>")
+
+        let name = prompt("Vad heter du?"),
+            grossSalary = prompt("Vad tjänar du brutto?"),
+            taxPercent = prompt("Vad betalar du i skatt?","Svara i procent"),
+            rent = prompt("Vad betalar du i hyra?")
+
+            grossSalary = Number(grossSalary/100)
+            taxPercent = Number (taxPercent)
+            rent = Number(rent)
+
+        let taxes =  grossSalary * taxPercent,
+            netSalary = grossSalary - taxes,
+            moneyLeft = netSalary - rent
+
+
+                document.write("<h1>Budgetkalkyl</h1>")
+                document.write("Budget för " + name + ":")
+                documnet.write("<br><br>")
+                document.write("Bruttolön: " + grossSalary)
+                document.write("<br>")
+                document.write("Skatt:" + taxes)
+                documnet.write("<br>")
+                document.write("Nettolön: " + netSalary)
+                document.write("<br>")
+                document.write("Du har " + moneyLeft + "kr kvar att leva på denna månad.")
+                document.write("<br>")
+                document.write("40% till mat: " + moneyLeft * 0.4)
+                document.write("<br>")
+                document.write("10% till mat: " + moneyLeft * 0.1)
+                document.write("<br>")
+                document.write("30% till mat: " + moneyLeft * 0.3)
+                document.write("<br>")
+                document.write("20% till mat: " + moneyLeft * 0.2)
     </script>
 
 </body>
