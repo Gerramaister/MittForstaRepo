@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        function cmTillFot() {
+            let cm = prompt("Hur många cm vill du göra om till fot?","Skriv här"),
+                fot = Number(cm)/30
+                document.write(cm + "cm är lika med " + fot + "fot." )
+
+        }
+        function centimeterTillFot(centimeter) {
+            let fot = centimeter/30
+            return fot.toFixed(2)
+        }
+        
+        cmTillFot()
+
+        document.write("<br><br>")
+        let cm = prompt("Hur många cm vill du göra om till fot?","Skriv här")
+            cm = Number(cm)
+        let fot = centimeterTillFot(cm)
+        fot = Number(fot)
+        document.write(cm + "cm är lika med " + fot + "fot.")
+
+    </script>
+</body>
+</html>
