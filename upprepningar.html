@@ -8,27 +8,34 @@
 </head>
 <body>
     <script>
-        // document.write("<h1> Upprepning</h1>")
+        document.write("<h1> Upprepning</h1>")
+    let numberAge = prompt("Hur gammal är du?", "Fyll i din ålder")
+        numberAge = Number(numberAge)
+        for (let i = 0; i <= numberAge; i++) {
+            if ( i > 0 && i < 11 ) {
+                document.write("Du är en mellan 0-10år. Rätt svar= " + numberAge + "<br>")
+            }
+            
+            else {
+                document.write("Du är väldigt gammal!<br>" )
+            }
+        }
+        document.write("<br><br>")
+        document.write("Omvandlingtabell grader Celcius till Farenheit<br><br>")
 
-        // for (let i = 1; i <= 5; i++) {
-        //     document.write("Detta är iteration " + i + "<br>" )
-        // }
-        // document.write("<br><br>")
-        // document.write("Omvandlingtabell grader Celcius till Farenheit<br><br>")
-
-        // for (let c=0; c <= 10; c++) {
-        //     let farenheit = 1.8 * c + 32
-        //     farenheit = farenheit.toFixed(1)
-        // document.write(c + " grader C är " + farenheit + " grader F" +"<br>")
-        // }
-        // document.write("<br><br>")
+        for (let c=0; c <= 10; c++) {
+            let farenheit = 1.8 * c + 32
+            farenheit = farenheit.toFixed(1)
+        document.write(c + " grader C är " + farenheit + " grader F" +"<br>")
+        }
+        document.write("<br><br>")
         
-        // let tal = prompt("Vilken gångertabell vill du kolla?")
-        // document.write(tal + "-ans gångertabell: <br>")
-        // for (let i=0; i <= 10; i++ ) {
-        //     let tabell = tal*i
-        //     document.write(tal +"*" + i + " = "+ tabell + "<br>")
-        // }
+        let tal = prompt("Vilken gånger tabell vill du kolla?")
+        document.write(tal + "-ans gångertabell: <br>")
+        for (let i=0; i <= 10; i++ ) {
+            let tabell = tal*i
+            document.write(tal +"*" + i + " = "+ tabell + "<br>")
+        }
         for (let x=0; x<=10; x++) {
             let tabell = x*2
         document.write(tabell + "<br>")
@@ -38,10 +45,10 @@
         for (let y=10; y>=0; y--) {
             document.write(y + "<br>")
         }
-        let fruits = ["AHple", "Benana", "Ojange", "D juass", "sNaÄLKsa", "kiasdhDSA", "gkALLas", "olNNS", "LaIIssN", "KsOPaa"];
-            for (g of fruits) {
-            document.write(g[1])
-}
+        let jibberish = ["AHple", "Benana", "Ojange", "D juass", "sHaÄLKsa", "kaasdhDSA", "gmALLas", "opNNS", "LuIIssN", "KsOPaa"];
+            for (x of jibberish) {
+            document.write(x[1])
+        }
 
     </script>
     
