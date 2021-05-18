@@ -11,13 +11,13 @@
         document.write("<h1> Upprepning</h1>")
     let numberAge = prompt("Hur gammal är du?", "Fyll i din ålder")
         numberAge = Number(numberAge)
-        for (let i = 0; i <= numberAge; i++) {
+        for (let i = numberAge; i <= 100; i++) {
             if ( i > 0 && i < 11 ) {
-                document.write("Du är en mellan 0-10år. Rätt svar= " + numberAge + "<br>")
+                document.write("Du är mellan 0-10år. Rätt svar= " + numberAge + "<br>")
             }
             
             else {
-                document.write("Du är väldigt gammal!<br>" )
+                document.write("Du är väldigt gammal!" + i + "<br>")
             }
         }
         document.write("<br><br>")

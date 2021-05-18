@@ -8,26 +8,70 @@
 </head>
 <body>
     <script>
-        function cmTillFot() {
-            let cm = prompt("Hur många cm vill du göra om till fot?","Skriv här"),
-                fot = Number(cm)/30
-                document.write(cm + "cm är lika med " + fot + "fot." )
+        // function cmTillFot() {
+        //     let cm = prompt("Hur många cm vill du göra om till fot?","Skriv här"),
+        //         fot = Number(cm)/30
+        //         document.write(cm + "cm är lika med " + fot.toFixed(2) + "fot." )
 
-        }
-        function centimeterTillFot(centimeter) {
-            let fot = centimeter/30
-            return fot.toFixed(2)
-        }
+        // }
+        // function centimeterTillFot(centimeter) {
+        //     let fot = centimeter/30
+        //     return fot.toFixed(2)
+        // }
         
-        cmTillFot()
+        // function euro_till_sek(euro) {
+        //     let pengar = euro * kursen
+        //     return pengar
+        // }
+        // function sek_till_euro(sek) {
 
-        document.write("<br><br>")
-        let cm = prompt("Hur många cm vill du göra om till fot?","Skriv här")
-            cm = Number(cm)
-        let fot = centimeterTillFot(cm)
-        fot = Number(fot)
-        document.write(cm + "cm är lika med " + fot + "fot.")
+        // }
+        // cmTillFot()
 
+        // document.write("<br><br>")
+        // let cm = prompt("Hur många cm vill du göra om till fot?","Skriv här")
+        //     cm = Number(cm)
+        
+        // document.write(cm + "cm är lika med " + centimeterTillFot(cm) + "fot.<br>")
+
+
+        // let valuta = prompt("Vilken valuta vill du växla", "Skriv euro eller sek")
+        //     if (valuta === "euro") {
+        //         let kursen = prompt("Vad är kursen på svenska kronan?"),
+        //             antalEuro = prompt("Hur många euro vill du växla")
+        //             kursen = Number(kursen)
+        //     document.write("För " + antalEuro + "euro får du " + euro_till_sek(antalEuro) + "sek.")
+            
+        //     }
+        //     else if (valuta === "sek") {
+
+        //     }
+
+            // KODEN OVAN FUNKAR EJ SOM JAG VILL
+
+        function euro_till_sek() {
+let euro=prompt("Hur många euro vill du växla in?:")
+let kurs=prompt("Skriv in växlingskursen:")
+let sek = Number(euro) * Number(kurs)
+sek = sek.toFixed(2);
+document.write("För " +euro +" euro får du " + sek +" sek.")
+}
+
+function sek_till_euro() {
+let sek=prompt("Hur många sek vill du växla in?:")
+let kurs = prompt("Skriv in växlingskursen:")
+let euro = Number(sek) / Number(kurs)
+euro = euro.toFixed(2)
+document.write("För " + sek +" sek får du " + euro + " euro.")
+}
+
+svar=prompt("Vill du växla in euro eller sek?","Skriv euro eller sek här!");
+if (svar === "euro") {
+euro_till_sek()
+}
+else {
+sek_till_euro()
+}
     </script>
 </body>
 </html>
